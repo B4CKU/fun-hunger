@@ -1,6 +1,7 @@
 # Fun Hunger
 ## Overview
 This mod aims to rework Minecraft's hunger system, to make it less tedious and give different kinds of food different uses, without being too overpowered.
+Inspired by the food system from Detour (upcoming total overhaul mod).
 ## Changes
 - Removed starving.
 - Exhaustion mechanics (saturation drain from actions like jumping, sprinting or mining) removed. 
@@ -8,6 +9,8 @@ This mod aims to rework Minecraft's hunger system, to make it less tedious and g
 - Saturation of recently eaten food increases amount of health recovered and decreases the regeneration speed.
 - Decreased maximum hunger by 50%; overall healing from food decreased.
 ## WIP Features
+- Saturation brackets (0, 20; in case any mod breaks anything by just adding saturation).
+- Saturation and hunger effects changed to affect the foodLevel rather than saturation/exhaustion.
 - Prevent eating while at 10 hunger.
 - Make eating less filling (not saturating!) foods faster.
 - Finish the healing formula (HungerManagerMixin.class).
