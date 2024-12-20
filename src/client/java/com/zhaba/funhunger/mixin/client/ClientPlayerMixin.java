@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(ClientPlayerEntity.class)
 public class ClientPlayerMixin {
 
-    //This mixin changes the hunger requirement of the sprint into a health requirement.
+    //This mixin changes the hunger requirement of the sprint into a health requirement
     //Otherwise it's functionally pretty much the same as vanilla
     @Inject(method = "canSprint", at = @At("TAIL"), cancellable = true)
     private void sprintingOverride(CallbackInfoReturnable<Boolean> cir) {
